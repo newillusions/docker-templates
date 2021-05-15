@@ -10,7 +10,7 @@
   <Overview>An open-source invoicing and time-tracking app built with Laravel https://www.invoiceninja.com</Overview>
   <Category>Productivity: Tools:</Category>
   <WebUI>https://[IP]:[PORT:9000]/</WebUI>
-  <TemplateURL>https://raw.githubusercontent.com/anojht/invoiceninja/master/unraid-invoice-ninja.xml</TemplateURL>
+  <TemplateURL>https://raw.githubusercontent.com/newillusions/docker-templates/master/inv_ninja_v5.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/hillelcoren/invoice-ninja/master/public/images/round_logo.png</Icon>
   <Config Name="APP_ENV" Target="APP_ENV" Default="production" Description="Container Variable: APP_ENV" Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Debug Mode" Target="APP_DEBUG" Default="0" Description="Container Variable: APP_DEBUG" Type="Variable" Display="advanced" Required="false" Mask="false"/>
