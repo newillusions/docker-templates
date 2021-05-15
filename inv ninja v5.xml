@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Container version="1">
+  <Name>invoiceninja v5</Name>
+  <Repository>invoiceninja/invoiceninja</Repository>
+  <Registry>https://hub.docker.com/r/invoiceninja/invoiceninja</Registry>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Support></Support>
+  <Project>https://www.invoiceninja.com/</Project>
+  <Overview>An open-source invoicing and time-tracking app built with Laravel https://www.invoiceninja.com</Overview>
+  <Category>Productivity: Tools:</Category>
+  <WebUI>https://[IP]:[PORT:9000]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/anojht/invoiceninja/master/unraid-invoice-ninja.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/hillelcoren/invoice-ninja/master/public/images/round_logo.png</Icon>
+  <Config Name="APP_ENV" Target="APP_ENV" Default="production" Description="Container Variable: APP_ENV" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Debug Mode" Target="APP_DEBUG" Default="0" Description="Container Variable: APP_DEBUG" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Database Type" Target="DB_TYPE" Default="mysql" Description="Container Variable: DB_TYPE" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="DB_STRICT" Target="DB_STRICT" Default="false" Description="Container Variable: DB_STRICT" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Database Host" Target="DB_HOST" Default="10.0.1.11:3306" Description="Container Variable: DB_HOST" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Database Name" Target="DB_DATABASE" Default="ninja_new" Description="Container Variable: DB_DATABASE" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Database username" Target="DB_USERNAME" Default="ninja_new" Description="Container Variable: DB_USERNAME" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Database Password" Target="DB_PASSWORD" Default="ninja_new" Description="Container Variable: DB_PASSWORD" Type="Variable" Display="always" Required="false" Mask="true"/>
+  <Config Name="APP_URL" Target="APP_URL" Default="https://invnew.newillusions.online" Description="Container Variable: APP_URL" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="APP_KEY" Target="APP_KEY" Default="" Description="Container Variable: APP_KEY" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="APP_CIPHER" Target="APP_CIPHER" Default="AES-256-CBC" Description="Container Variable: APP_CIPHER" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="HTTP Port" Target="9000" Default="9000" Mode="tcp" Description="Container Port: 9000" Type="Port" Display="always" Required="true" Mask="false"/>
+  <Config Name="Storage" Target="/var/www/app/storage" Default="/mnt/user/appdata/ninjaV5/storage" Mode="rw" Description="Container Path: /var/www/app/storage" Type="Path" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Public" Target="/var/www/app/public" Default="/mnt/user/appdata/ninjav5/public" Mode="rw" Description="Container Path: /var/www/app/public" Type="Path" Display="advanced" Required="false" Mask="false"/>
+</Container>
